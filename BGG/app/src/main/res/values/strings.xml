@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">BGA</string>
+    <string name="title" translatable="false">Board Game Atlas</string>
+    <string name="btn_search">Search</string>
+    <string name="txt_game">Game Search:</string>
+    <string name="total_games" translatable="false">Total:  </string>
+    <string name="zero_value" translatable="false">0</string>
+    <string name="about">About</string>
+    <string name="most_popular_games">Most popular games</string>
+    <string name="personal_game_lists">Personal lists</string>
+    <string name="about_us">About Us</string>
+    <string name="developer1" translatable="false">Afonso Nobre 44777</string>
+    <string name="developer2" translatable="false">Diogo Santos 44774</string>
+    <string name="developer3" translatable="false">Jéssica Olivença 44816</string>
+    <string name="source">Source: </string>
+    <string name="details_source_url" translatable="false"><a href=""> </a></string>
+    <string name="game_rules_txt">Rules: </string>
+    <string name="details_rules" translatable="false"><a href=""> </a></string>
+    <string name="game_name_txt">Name: </string>
+    <string name="game_year">Year: </string>
+    <string name="game_min_players">Min Players: </string>
+    <string name="game_max_players">Max Players: </string>
+    <string name="game_min_age">Min Age: </string>
+    <string name="game_desc">Description: </string>
+    <string name="game_primary_publisher">Primary Publisher: </string>
+    <string name="game_developers" translatable="false">Developers: </string>
+    <string name="game_avrg_rating">Average Rating: </string>
+    <string name="game_url">Official URL: </string>
+    <string name="lists">Personal Lists </string>
+    <string name="create">Create </string>
+    <string name="ISELPDM" translatable="false">ISEL-PDM-1920i</string>
+    <string name="source_url" translatable="false"><a href="">https://www.boardgameatlas.com</a> </string>
+    <string name="list_text">List name</string>
+    <string name="one" translatable="false">1</string>
+    <string name="prev" translatable="false"><![CDATA[<<]]></string>
+    <string name="next" translatable="false"><![CDATA[>>]]></string>
+    <string name="search_title">"Search reuslts for "</string>
+    <string name="delete">Delete</string>
+    <string name="delete_every_lists">Delete all Lists</string>
+    <string name="yes_button">Yes</string>
+    <string name="no_button">No</string>
+    <string name="remove_selected_lists_confirmation">Are you sure you want to delete selected lists?</string>
+    <string name="delete_all_lists_confirmation">Are you sure you want to delete all lists?</string>
+    <string name="delete_list">Are you sure you want to delete list</string>
+    <string name="group_name_insert">Insert a list here</string>
+    <string name="list_search">List search</string>
+    <string name="game_name_search">Game Name</string>
+    <string name="choose_lists">Choose one or more lists:</string>
+    <string name="add_game_to_list">Add game to list</string>
+    <string name="add_lists">Add to List</string>
+    <string name="list_selection">List Selection</string>
+    <string name="no_lists_selected">No Lists Selected</string>
+    <string name="group">List</string>
+    <string name="delete_characteristics_group">Delete favorites list</string>
+    <string name="add_characteristics_group">Add characteristic group</string>
+    <string name="favorite">Favorites</string>
+    <string name="done">Done</string>
+    <string name="characteristic_group_name_insert">Insert name of favorites list</string>
+    <string name="mechanic">Insert a mechanic</string>
+    <string name="category">Insert a category</string>
+    <string name="mechanic_text">Mechanic:</string>
+    <string name="category_text">Category:</string>
+    <string name="publisher_text" translatable="false">Publisher:</string>
+    <string name="publisher">Insert a publisher</string>
+    <string name="designer_text">Designer:</string>
+    <string name="designer">Insert a designer:</string>
+    <string name="delete_every_characteristic_group">Delete all favorite lists</string>
+    <string name="please_insert_all">Please insert the required information</string>
+    <string name="new_favorites_list">Favorite Games For List</string>
+    <string name="no_internet">No Internet connection!</string>
+    <string name="choose">Choose</string>
+    <string name="deletion_canceled">Deletion Canceled.</string>
+    <string name="add">Add</string>
+    <string name="notification" translatable="false">BGA</string>
+    <string name="workerTimerTxt" >Time between Notifications (Minutes): </string>
+    <string name="carouselTxt" >Time between Carousel change (Seconds): </string>
+    <string name="settingsTitle" >Settings</string>
+    <string name="carousel_time_changed">Carousel slide interval changed!</string>
+    <string name="notification_time_changed">Time between notifications has been changed!</string>
+    <string name="settings">settings</string>
+
+    <string-array name="spinner_options">
+        <item>Game</item>
+        <item>Company</item>
+        <item>Developer</item>
+    </string-array>
+
+    <string-array name="carousel_options">
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+    </string-array>
+
+    <string-array name="timer_options">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+    </string-array>
+
+    <string-array name="spinner_Mechanics" />
+    <string-array name="spinner_Categories" />
+
+</resources>

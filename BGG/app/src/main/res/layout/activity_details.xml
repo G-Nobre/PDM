@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.DetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="300dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/game_image_details"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="20dp" />
+
+            <LinearLayout
+                android:id="@+id/name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@id/game_image_details">
+
+                <TextView
+                    android:id="@+id/game_name_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_name_txt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/game_name_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    app:layout_constraintStart_toEndOf="@id/game_name_txt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/year_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/name_layout">
+
+                <TextView
+                    android:id="@+id/game_year_published_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_year"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/game_year_published_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    app:layout_constraintLeft_toRightOf="@id/game_year_published_txt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/min_players_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/year_layout">
+
+                <TextView
+                    android:id="@+id/game_min_players_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_min_players"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/game_min_players_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    app:layout_constraintLeft_toRightOf="@id/game_min_players_txt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/max_players_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/min_players_layout">
+
+                <TextView
+                    android:id="@+id/game_max_players_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_max_players"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/game_max_players_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    app:layout_constraintLeft_toRightOf="@id/game_max_players_txt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/min_age_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/max_players_layout">
+
+                <TextView
+                    android:id="@+id/game_min_age_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_min_age"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/game_min_age_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    app:layout_constraintLeft_toRightOf="@id/game_min_age_txt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/primary_publisher_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/min_age_layout">
+
+                <TextView
+                    android:id="@+id/game_primary_publisher_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_primary_publisher"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/game_primary_publisher_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    app:layout_constraintLeft_toRightOf="@id/game_primary_publisher_txt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rating_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/name_layout">
+
+                <TextView
+                    android:id="@+id/game_rating_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/game_avrg_rating"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/details_game_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    app:layout_constraintLeft_toRightOf="@id/game_rating_txt" />
+
+                <RatingBar
+                    android:id="@+id/details_ratingBar"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="2dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:theme="@style/RatingBar"
+                    app:layout_constraintLeft_toRightOf="@id/details_game_rating" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rules_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                android:id="@+id/game_rules_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_rules_txt"
+                android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/game_rules"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/publishers_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/game_developers"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/primary_publisher_layout" />
+
+            <LinearLayout
+                android:id="@+id/pulishers_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/publishers_txt">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/game_desc_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/game_desc"
+                android:textStyle="bold" />
+
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/game_desc_txt">
+
+                <TextView
+                    android:id="@+id/game_desc_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:textSize="14sp" />
+            </androidx.core.widget.NestedScrollView>
+            <Button
+                    android:id="@+id/add_to_list_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_game_to_list"
+                    />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

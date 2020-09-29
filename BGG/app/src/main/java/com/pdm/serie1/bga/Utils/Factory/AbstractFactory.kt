@@ -1,0 +1,31 @@
+package com.pdm.serie1.bga.Utils.Factory
+
+import android.content.Context
+import android.os.Bundle
+import android.os.Parcelable
+import android.util.Log
+import androidx.fragment.app.FragmentActivity
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProviders
+import com.pdm.serie1.bga.Activities.TAG
+
+abstract class AbstractFactory(private val bundle: Bundle?) : ViewModelProvider.Factory {
+
+    override fun <T : ViewModel?> create(modelClass: Class<T>): T {
+        val model: Parcelable? = bundle?.getParcelable(getParcelableValue())
+
+        return if (model != null) {
+            Log.v(TAG, " ** Restoring ${modelClass.name} from a bundle! **")
+            model as T
+        } else {
+            Log.v(TAG, "** CREATING a new ${getModel()::class.simpleName}! **")
+            getModel() as T
+        }
+    }
+
+    abstract fun getModel(): ViewModel
+
+    abstract fun getParcelableValue(): String
+
+}

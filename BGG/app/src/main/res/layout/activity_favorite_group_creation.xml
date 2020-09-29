@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activities.FavoritesGroupCreationActivity">
+
+    <EditText
+            android:id="@+id/edit_text_favorite_group_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="5dp"
+            android:hint="@string/characteristic_group_name_insert"
+            android:minWidth="150dp"
+            android:singleLine="true"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+            android:id="@+id/middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/edit_text_favorite_group_name">
+
+        <LinearLayout
+                android:id="@+id/mechanic_linear_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/mechanic"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mechanic_text"
+                    android:textSize="24sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edit_text_favorite_group_name" />
+
+            <Button
+                    android:id="@+id/button_mechanics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/choose"
+                    app:layout_constraintStart_toEndOf="@id/mechanic"
+                    app:layout_constraintTop_toBottomOf="@id/edit_text_favorite_group_name" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:id="@+id/category_linear_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/category"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/category_text"
+                    android:textSize="24sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/mechanic" />
+
+            <Button
+                    android:id="@+id/button_categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/choose"
+                    app:layout_constraintStart_toEndOf="@id/category"
+                    app:layout_constraintTop_toBottomOf="@id/button_mechanics" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middle_names"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/middle">
+        <ScrollView
+                android:id="@+id/mechanic_scroll_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="50dp"
+                android:maxHeight="40dp">
+
+            <LinearLayout
+                    android:id="@+id/mechanics_scroll_view_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="40dp"
+                    android:orientation="vertical" />
+        </ScrollView>
+
+        <ScrollView
+                android:id="@+id/category_scroll_view"
+                android:layout_width="wrap_content"
+                android:minWidth="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:maxHeight="40dp">
+
+            <LinearLayout
+                    android:id="@+id/category_scroll_view_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="40dp"
+                    android:orientation="vertical" />
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:id="@+id/designer_linear_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/middle_names">
+
+        <TextView
+                android:id="@+id/designer"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/designer_text"
+                android:textSize="24sp" />
+
+
+        <EditText
+                android:id="@+id/edit_text_designer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:hint="@string/designer"
+                android:minWidth="150dp"
+                android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/publisher_linear_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/designer_linear_layout">
+
+
+        <TextView
+                android:id="@+id/publisher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/publisher_text"
+                android:textSize="24sp" />
+
+        <EditText
+                android:id="@+id/edit_text_publisher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:hint="@string/publisher"
+                android:minWidth="150dp"
+                android:singleLine="true" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
